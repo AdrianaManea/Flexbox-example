@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.flex-container-second {
+  max-width: 1000px;
+  background-color: #C5BAAF;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-container-second div {
+  background-color: #424B54;
+  min-width: 100px;
+  width: 900px;
+  height: 90px;
+  padding: 10px;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.second div {
+  background-color: #E1CE7A;
+  min-width: 40px;
+  width: 200px;
+  height: 40px;
+}
+
+.second div:first-child {
+  margin-left: 10px;
+}
+
+.second div:last-child {
+  margin-right: 10px;
+}
+
+/* a-container */
+.one-flex {
+  flex: auto;
+}
+
+.two-flex {
+  flex: auto;
+}
+
+.three-flex {
+  flex: auto;
+}
+
+/* b-container */
+.four-flex {
+  flex: auto;
+}
+
+.five-flex {
+  flex: initial;
+}
+
+.six-flex {
+  flex: initial;
+}
+
+/* c-container */
+.seven-flex {
+  flex: auto;
+}
+
+.eight-flex {
+  flex: auto;
+}
+
+.nine-flex {
+  flex: none;
+}
+
+/* d-container */
+.ten-flex {
+  flex: initial;
+}
+
+.eleven-flex {
+  flex: none;
+}
+
+.twelve-flex {
+  flex: none;
+}
+
+/* e-container */
+.thirteen-flex {
+  flex: 4;
+}
+
+.fourteen-flex {
+  flex: 2;
+}
+
+.fifteen-flex {
+  flex: 1;
+}
+
+
+/* flex-container */
+.flex-container {
+  max-width: 1000px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  padding: 12px;
+  border: 1px solid blue;
+
+  display: flex;
+  gap: 6px;
+}
+
+.flex-container div {
+  background-color: cornflowerblue;
+  border: 1px solid blue;
+  height: 100px;
+  width: 250px;
+  text-align: center;
+
+  /* flex: 1 1 0; */
+  flex: 1 1 auto;
+}
+
+/* article container */
+.article-container {
+  background-color: lavender;
+  max-width: 1000px;
+  border: 1px solid blue;
+  margin: 0 auto;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+code {
+  color: crimson;
+  background-color: #f1f1f1;
+  font-size: 105%;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+.article-container div {
+  background-color: cornflowerblue;
+  border: 1px solid blue;
+
+  height: auto;
+  width: 600px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-container div:last-child {
+  background-color: goldenrod;
+}
+
+ul {
+  padding: 0 16px;
+}
+
+li {
+  margin-top: 6px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Flex</title>
+</head>
+<body>
+  
+  <br>
+  <br>
+
+  <div class="flex-container-second">
+    <div class="second a-container">
+      <div class="one-flex">auto</div>
+      <div class="two-flex">auto</div>
+      <div class="three-flex">auto</div>
+    </div>
+    <div class="second b-container">
+      <div class="four-flex">auto</div>
+      <div class="five-flex">initial</div>
+      <div class="six-flex">initial</div>
+    </div>
+    <div class="second c-container">
+      <div class="seven-flex">auto</div>
+      <div class="eight-flex">auto</div>
+      <div class="nine-flex">none</div>
+    </div>
+    <div class="second d-container">
+      <div class="ten-flex">initial</div>
+      <div class="eleven-flex">none</div>
+      <div class="twelve-flex">none</div>
+    </div>
+    <div class="second e-container">
+      <div class="thirteen-flex">4</div>
+      <div class="fourteen-flex">2</div>
+      <div class="fifteen-flex">1</div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <br>
+
+  <div class="flex-container">
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+  </div>
+  
+  <br>
+  
+  <article class="article-container">
+    <div class="article flex-container">
+      <li>
+        <code>flex: 'flex-grow' 'flex-shrink' 'flex-basis';</code>
+      </li>
+    </div>
+
+    <div class="article initial-container">
+      <h3><code>flex: initial;</code> equivalent to <code>flex: 0 1 auto;</code></h3>
+      <ul>
+        <li>
+          <p>this is the initial value</p>
+        </li>
+
+        <li>
+          <p>sizes the item based on the <code>width</code> / <code>height</code> properties</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="article auto-container">
+      <h3><code>flex: auto;</code> equivalent to <code>flex: 1 1 auto;</code></h3>
+      <ul>
+        <li>
+          <p>sizes the item based on the <code>width</code> / <code>height</code> properties but makes them fully flexible so that they absorb any free space along the main axis</p>
+        </li>
+        <li>If all items are either <code>flex: auto;</code>, <code>flex: initial;</code> or <code>flex: none;</code>, any positive free space after the items have been sized will be distributed evenly to the items with <code>flex: auto;</code></li>
+      </ul>
+    </div>
+
+    <div class="article none-container">
+      <h3><code>flex: none;</code> equivalent to <code>flex 0 0 auto;</code></h3>
+      <ul>
+        <li>
+          <p>this value sized the item according to the <code>width</code> / <code>height</code> properties, but makes the flex item fully inflexible</p>
+        </li>
+        <li>
+          <p>this is similar to <code>flex: initial;</code>, except that flex items are not allowed to shrink, even in overflow situations</p>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="article positive-number-container">
+      <h3><code>flex: 'positive-number';</code> equivalent to <code>flex: 'positive-number' 1 0;</code></h3>
+      <ul>
+        <li>
+          <p>makes the flex item flexible and sets <code>flex: basis;</code> to zero, resulting in an item that receives the specified proportion of the free space in the flex container</p>
+        </li>
+        <li>
+          <p>if all items in the flex container use this pattern, their sizes will be proportional to the specified flex factor.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="article default-container">
+      <ul>
+        <li>
+          <p>by default, flex items won't shrink below their minimum content size (the length of the longest word or fixed-size element).</p>
+        </li>
+        <li>
+          <p>to change this, set <code>min-width</code> or <code>min-height</code> property</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="article common-container">
+      <h3>Authors are encouraged to control flexibility using the <code>flex: ;</code> shorthand rather than with its longhand properties directly, as the shorthand correctly resets any unspecified components to accomodate common uses</h3>
+    </div>
+  </article>
+
+  <br>
+  
+
+</body>
+</html>
