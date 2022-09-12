@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+
+
+/* Flex container second */
 .flex-container-second {
   max-width: 1000px;
   background-color: #C5BAAF;
@@ -18,6 +21,10 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+.a-flex-shorthand {
+  color: #E1CE7A;
 }
 
 .flex-container-second div {
@@ -149,6 +156,10 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 16px;
+}
+
+.a-flex-section {
+  color: crimson;
 }
 
 code {
