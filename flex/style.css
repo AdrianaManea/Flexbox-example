@@ -8,7 +8,99 @@
   box-sizing: border-box;
 }
 
+/* flex container third */
+.flex-container-third {
+  max-width: 1000px;
+  background-color: rgb(107, 105, 105);
+  margin: 0 auto;
+  padding: 20px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.a-css-tricks {
+  color: crimson;
+  background-color: cadetblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.parent {
+  background-color: cadetblue;
+
+  /* width: 900px; */
+  width: 1200px;
+  /* height: 100px; */
+
+  display: flex;
+  padding: 10px;
+}
+
+.child {
+  background-color: thistle;
+  padding: 20px;
+  border: #333 solid 1px;
+
+  flex-grow: 1;
+}
+
+.child-zero {
+  /* default flex value */
+  /* flex: 0 1 auto; */
+  flex: 1 1 auto;
+}
+
+.child-one-one {
+  background-color: darkslategray;
+  color: White;
+
+  /* flex-grow: 3; */
+  flex-grow: 3;
+}
+
+.child-two-three {
+  background-color: darkslategray;
+  color: White;
+
+  flex-grow: 3;
+}
+
+.child-three-one {
+  background-color: darkslategray;
+  color: White;
+
+  flex: 0 0 auto;
+}
+
+
+.child-four-three {
+  background-color: darkslategray;
+  color: White;
+  
+  flex: 0 1 1000px;
+}
+
+.child-five-three {
+  background-color: darkslategray;
+  color: White;
+  
+  flex: 0 0 1000px;
+}
+
+.parent-six {
+  flex-wrap: wrap;
+}
+
+.child-six-three {
+  background-color: darkslategray;
+  color: White;
+
+  flex: 0 0 1000px;
+
+}
 
 /* Flex container second */
 .flex-container-second {

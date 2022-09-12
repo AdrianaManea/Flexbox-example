@@ -13,10 +13,61 @@
   <br>
   
   <div class="flex-container-third">
+
+    <div>
+      <h3><a href="https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/" class="a-css-tricks">Css tricks - Understanding flex-grow, flex-shrink, flex-basis</a></h3>
+    </div>
+
+    <div>
+      <code class="css-tricks-code">
+        .child {
+          flex: [flex-grow] [flex-shrink] [flex-basis];
+        }
+      </code>
+    </div>
+
     <div class="parent">
-      <div class="child">Child</div>
-      <div class="child">Child</div>
-      <div class="child">Child</div>
+      <div class="child child-zero">Child</div>
+      <div class="child child-zero">Child</div>
+      <div class="child child-zero">Child</div>
+      <div class="child">This is some longer content</div>
+    </div>
+
+    <div class="parent parent-one">
+      <div class="child child-one-one">Child</div>
+      <div class="child child-one-two">Child</div>
+      <div class="child child-one-three">Child</div>
+    </div>
+    
+    <div class="parent parent-two">
+      <div class="child child-two-one">Child</div>
+      <div class="child child-two-two">Now this is a lot of content that goes here and to be honest we should be wary of changes.</div>
+      <div class="child child-two-three">Child</div>
+    </div>
+    <div class="parent parent-three">
+      <div class="child child-three-one">Child</div>
+      <div class="child child-three-two">Child</div>
+      <div class="child child-three-three">Child</div>
+    </div>
+
+    <div class="parent parent-four">
+      <div class="child child-four-one">Child</div>
+      <div class="child child-four-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, expedita quia nostrum necessitatibus sunt blanditiis. Optio impedit praesentium soluta veritatis sapiente similique assumenda, molestiae labore nulla voluptates enim possimus aliquid tenetur accusantium, ratione facilis fuga, sit ad perferendis. Quis!</div>
+      <div class="child child-four-three">Child</div>
+    </div>
+    <div class="parent parent-five">
+      <div class="child child-five-one">Child</div>
+      <div class="child child-five-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos, expedita quia nostrum necessitatibus sunt blanditiis. Optio impedit praesentium soluta veritatis sapiente similique assumenda, molestiae labore nulla voluptates enim possimus aliquid tenetur accusantium, ratione facilis fuga, sit ad perferendis. Quis!</div>
+      <div class="child child-five-three">Child</div>
+    </div>
+
+
+    <div class="parent parent-six">
+      <div class="child child-six-one">Child</div>
+      <div class="child child-six-two">Now all of this changes if we set flex-wrap to the parent element: <code>.parent-five {
+        flex-wrap: wrap;
+      }</code> This is because, by default, flex items will try to fit into one line but flex-wrap: wrap will ignore that entirely. If those flex items can’t fit in the same space, they’ll break onto a new line.</div>
+      <div class="child child-six-three">Child</div>
     </div>
   </div>
 
