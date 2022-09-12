@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Foundation Axes</title>
+</head>
+<body>
+
+  <br>
+  <br>
+  <div class="container-one">
+    <div class="source">
+      <h3><a href="https://www.theodinproject.com/lessons/foundations-axes">TheOdinProject - foundation-axes</a></h3>
+    </div>
+
+    <div class="flex-container-one">
+      <div class="one-one"></div>
+      <div class="one-two"></div>
+      <div class="one-three"></div>
+    </div>
+    
+    <div class="text">
+      <p>One thing to note is that in this example, <code>flex-direction: column;</code> would not work as expected if we used the shorthand <code>flex: 1;</code>
+      </p>
+      
+      <!-- <br> -->
+      <p>
+        The reason for this is that the flex shorthand expands <code>flex-basis</code> to <code>0</code>, which means that all <code>flex-growing</code> and <code>flex-shrinking</code> would begin their calculations from <code>0</code>. 
+      </p>
+
+      <!-- <br> -->
+      <p>
+        <span>Empty divs</span> by default have <code>0</code> height, so for our flex items to fill up the height of their container, they don’t actually need to have any height at all.
+      </p>
+
+      <p>
+        <span>Another detail to notice:</span> when we changed the <code>flex-direction</code> to <code>column</code>, <code>flex-basis</code> refers to <code>height</code> instead of <code>width</code>. Given the context this may be obvious, but it’s something to be aware of.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

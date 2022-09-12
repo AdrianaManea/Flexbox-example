@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.source {
+  padding: 10px;
+}
+a {
+  color: blue;
+  opacity: 0.5;
+}
+
+.container-one {
+  max-width: 1000px;
+  background-color: darkcyan;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex-container-one {
+  background-color: blue;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container-one div {
+  background-color: dimgrey;
+  border: 1px solid #333;
+  height: 80px;
+  flex: 1 1 auto;
+  
+  /* flex: 1; */
+
+  margin: 4px;
+}
+
+.text {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+code {
+  color: blue;
+  background-color: aliceblue;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+span {
+  font-weight: bold;
+}
