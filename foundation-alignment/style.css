@@ -8,3 +8,67 @@
 *::after {
   box-sizing: inherit;
 }
+
+/* flex direction container */
+.flex-direction-container {
+  max-width: 1000px;
+  background-color: #fcaf58;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 2;
+  border: 1px solid #4e598c;
+}
+
+.main-axis {
+  height: 140px;
+  background-color: #4e598c;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+
+.main-axis div {
+  width: 60px;
+  height: 60px;
+  background-color: #ff8c42;
+  border: 1px solid blue;
+}
+
+
+/* flex container */
+.flex-container {
+  max-width: 1000px;
+  background-color: darkslategrey;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.alignment-container {
+  height: 140px;
+  background-color: lightseagreen;
+  border: 1px solid royalblue;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background-color: royalblue;
+  border: 1px solid darkblue;
+  /* flex: 1; */
+}
+
+code {
+  background-color: aliceblue;
+  color: blue;
+  padding: 2px 4px;
+  font-weight: bold;
+  border-radius: 4px;
+}
